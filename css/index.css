@@ -62,7 +62,6 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
 }
 
 /* Your code starts here! */
@@ -83,6 +82,10 @@ nav {
 	align-items: center;
 }
 
+a.top:hover {
+    color: black;
+}
+
 img.logo {
 	padding: 2.5%;
 	justify-content: space-around;
@@ -97,13 +100,11 @@ img.logo {
 .innovations {
 	text-align: center;
 	font-size:65px;
-	
 	width: 49%;
-	box-sizing: border-box;
+	margin-bottom: 0;
 	justify-content: space-around;
-	
 }
- 
+
 .image2 {
 	margin: 2.5% auto;
 	justify-content: space-around;
@@ -114,8 +115,12 @@ button {
 	margin-bottom: 10%;
 	width: 135px;
 }
+
+button:hover {
+    background-color: grey;
+}
 /*End of Header section*/
-/*Begins 2nd section Features and About*/
+/*2nd section Features and About*/
 h2 {
 	text-align: left;	
 }
@@ -133,7 +138,7 @@ div.about {
 	width: 49%;
 }
  /*End Second section*/
- /*Begins 3rd section MIDDLE IMAGE*/
+ /*3rd section MIDDLE IMAGE*/
  .middle-img {
 	width: 100%;
 	margin: 2.5% auto;
@@ -141,7 +146,7 @@ div.about {
 	align-items: center;
 }
  /*Ends Third section middle image*/
- /*Begins 4th section contains Services, Product and Vision*/
+ /*4th section contains Services, Product and Vision*/
 #bottom-section {
 	display: flex;
 	flex-wrap: wrap;
@@ -162,7 +167,7 @@ div.vision {
 	 margin: 2.5% 1%;
 }	
 /*Ends Forth section Services, Product and Vision*/
-/*Begins Contact section*/
+/*Contact section*/
 .contact {
 	padding:2px;
 	margin: 2px;

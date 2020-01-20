@@ -73,17 +73,17 @@ body {
 nav {
 	margin: 0 auto;
 	display: flex;
-	flex-wrap: wrap;
 }
-.top {
+a.top {
 	margin: 3% auto;
-	text-decoration: none;
+    text-decoration: none;
+    flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
 a.top:hover {
-    color: black;
+    color: #081fe9;
 }
 
 img.logo {
@@ -116,7 +116,8 @@ button {
 }
 
 button:hover {
-    background-color: grey;
+    color: #081fe9;
+    background-color: rgb(211, 210, 210);
 }
 /*End of Header section*/
 /*2nd section Features and About*/
@@ -176,5 +177,72 @@ footer {
 	margin: 2.5% 0 5%;
 	text-align: center;
 }
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    a.top {
+        margin: 0;
+        width: auto;
+        flex-direction: row;
+    }    
+    img.logo {        
+        width: 35%;
+    }
+    .image2 {
+        display: none;
+    }
+    .innovations {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+/*MOBILE */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    a.top {
+        color: rgb(148, 144, 144);
+        margin: 3.5%;
+    }    
+    img.logo {        
+        width: 40%;
+    }
+    .image2 {
+        display: none;
+    }
+    .first-section {
+        flex-direction: column;
+    }
+    div.features {
+        margin: 5% 0%;
+        width: auto;
+    }  
+    div.about {
+        margin: 5% 0;
+        width: auto;
+    }
+    #bottom-section {
+        flex-direction: column;
+    }
+    div.services {
+        margin: 5% 0;
+        width: auto;
+    }
+    div.product {
+        margin: 5% 0;
+        width: auto;
+    }
+    div.vision {
+        margin: 5% 0;
+        width: auto;
+    }	
 
+
+}
 

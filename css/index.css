@@ -72,16 +72,22 @@ body {
 /*Navigation section*/
 nav {
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-div.top {
-    margin: 3% 0;
-    width: 80%;
-    text-decoration: none;
+.links {    
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-div.top:hover {
+nav .links a {
+    color: black;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav .links a:hover {
     color: #081fe9;
 }
 
@@ -178,18 +184,21 @@ footer {
 }
 /*MEDIA QUERIES*/
 @media (max-width: 800px) {
+    body {
+        margin: 3% 0;
+    }
     nav {
-        flex-direction: column;
-        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
     }
-   div.top {
-        display: flex;
-        flex-wrap: wrap;
-    }    
-    img.logo { 
-        order: -1;       
-        width: 35%;
+    .links {
+        width: 110%;
+        margin:3% 0;
+    }        
+    div.img { 
+        width: 50%;
+        align-items: center;
     }
     .image2 {
         display: none;

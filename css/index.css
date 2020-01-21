@@ -71,24 +71,23 @@ body {
 }
 /*Navigation section*/
 nav {
-	margin: 0 auto;
 	display: flex;
+    justify-content: space-around;
 }
-a.top {
-	margin: 3% auto;
+div.top {
+    margin: 3% 0;
+    width: 80%;
     text-decoration: none;
-    flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+    align-items: center;
 }
 
-a.top:hover {
+div.top:hover {
     color: #081fe9;
 }
 
 img.logo {
-	padding: 2.5%;
-	justify-content: space-around;
+    padding: 2.5%;
+    justify-content: space-around;
     align-items: center;
 }
 /*End of Navigation section*/
@@ -180,16 +179,16 @@ footer {
 /*MEDIA QUERIES*/
 @media (max-width: 800px) {
     nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
-    a.top {
-        margin: 0;
-        width: auto;
-        flex-direction: row;
+   div.top {
+        display: flex;
+        flex-wrap: wrap;
     }    
-    img.logo {        
+    img.logo { 
+        order: -1;       
         width: 35%;
     }
     .image2 {
@@ -200,18 +199,25 @@ footer {
         margin: 0 auto;
     }
 }
-/*MOBILE */
+
 @media (max-width: 500px) {
     nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
-    a.top {
+    div.top {
+        font-size: 50%;
         color: rgb(148, 144, 144);
-        margin: 3.5%;
+        border-bottom: 1px solid black;
     }    
-    img.logo {        
-        width: 40%;
+    img.logo { 
+        order: -1;       
+        width: 50%;
+    }
+    .innovations {
+        text-align: center;
+        width: auto;
+        justify-content: space-around;
     }
     .image2 {
         display: none;
@@ -220,26 +226,26 @@ footer {
         flex-direction: column;
     }
     div.features {
-        margin: 5% 0%;
+        margin: 7% 0%;
         width: auto;
     }  
     div.about {
-        margin: 5% 0;
+        margin: 7% 0;
         width: auto;
     }
     #bottom-section {
         flex-direction: column;
     }
     div.services {
-        margin: 5% 0;
+        margin: 7% 0;
         width: auto;
     }
     div.product {
-        margin: 5% 0;
+        margin: 7% 0;
         width: auto;
     }
     div.vision {
-        margin: 5% 0;
+        margin: 7% 0;
         width: auto;
     }	
 

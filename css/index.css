@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 body {
 	margin: 0 10%;
 }
-/*Navigation section*/
+/*NAVIGATION: .LINKS/ .LOGO*/
 nav {
 	display: flex;
     justify-content: space-between;
@@ -96,8 +96,8 @@ img.logo {
     justify-content: space-around;
     align-items: center;
 }
-/*End of Navigation section*/
-/*Header section begins*/
+/*ENDS NAVIGATION: .LINKS/ .LOGO */
+/* .HEADER: .INNOVATIONS/ BUTTON/ .IMAGE2*/
 #header {
 	display:flex;
 	flex-wrap: wrap;
@@ -124,8 +124,8 @@ button:hover {
     color: #081fe9;
     background-color: rgb(211, 210, 210);
 }
-/*End of Header section*/
-/*2nd section Features and About*/
+/*ENDS .HEADER: .INNOVATIONS/ BUTTON/ .IMAGE2*/
+/*.FIRST-SECTION: .FEATURES/ .ABOUT*/
 h2 {
 	text-align: left;	
 }
@@ -142,16 +142,16 @@ div.about {
 	margin: 2.5% .5%;
 	width: 49%;
 }
- /*End Second section*/
- /*3rd section MIDDLE IMAGE*/
+ /*ENDS .FIRST-SECTION: .FEATURES/ .ABOUT*/
+ /*.MIDDLE-IMG SECTION*/
  .middle-img {
 	width: 100%;
 	margin: 2.5% auto;
 	display: flex;
 	align-items: center;
 }
- /*Ends Third section middle image*/
- /*4th section contains Services, Product and Vision*/
+ /*ENDS .MIDDLE-IMG SECTION*/
+ /*#BOTTON-SECTION: .SERVICES/ .PRODUCT/ .VISION */
 #bottom-section {
 	display: flex;
 	flex-wrap: wrap;
@@ -171,17 +171,131 @@ div.vision {
 	 width: 30%;
 	 margin: 2.5% 1%;
 }	
-/*Ends Forth section Services, Product and Vision*/
-/*Contact section*/
+/*ENDS #BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION */
+/*CONTACT SECTION*/
 .contact {
 	padding:2px;
 	margin: 2px;
 }
-
+/*ENDS CONTACT SECTION*/
+/*FOOTER SECTION*/
 footer {
 	margin: 2.5% 0 5%;
 	text-align: center;
 }
+/*ENDS FOOTER SECTION AND ENDS INDEX.HTML*/
+
+/*BEGINS SERVICES.HTML */
+/*.SECTION-HEADER-IMG*/
+img.services-header-img {
+	width: 100%;
+	margin: 3.5% 0;
+}
+/*ENDS .SECTION-HEADER-IMG*/
+/*.SERVICES-INFO SECTION*/
+.services-info {
+	width: 100%;
+	margin-bottom: 2.5%;
+}
+/*ENDS .SERVICES-INFO SECTION*/
+/*.CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.digital-design {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.ux-ui {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+/*ENDS .CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
+/*.CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
+.container2 {
+    display: flex;
+	flex-direction: row;
+}
+
+.digital-marketing {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+
+.web-development {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+/*ENDS .CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
+/*.CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/ .BUTTON2*/
+.container3 {
+	display: flex;
+	flex-direction: row;
+}
+
+.ios-development {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.android-development {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.button2 {
+	margin: 2% 0;
+	padding: 2%;
+	width: 35%;
+	border-radius: 5%;
+}
+
+.button2:hover {
+	background-color:#BFBFBF;	
+}
+/*ENDS .CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/.BUTTON2*/
+/*.CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG */
+.container4 {
+	display: flex;
+	flex-direction: row;
+}
+.facts-about-services {
+	align-content: center;
+	margin: 2.5%;
+}
+
+ul {
+	text-align: left;
+	line-height: 1.5;
+}
+
+.services-info-img {
+	margin: 2.5%;
+	padding:2%;
+}
+/*ENDS .CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG*/
+/*FOOTER SECTION*/
+footer {
+	text-align: center;
+	margin: 5%;
+}
+/*ENDS FOOTER SECTION AND END OF SERVICES.HTML*/
+
 /*MEDIA QUERIES*/
 @media (max-width: 800px) {
     body {
@@ -267,4 +381,3 @@ footer {
         width: auto;
     }
 }
-

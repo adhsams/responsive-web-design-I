@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,12 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -62,116 +58,103 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-/**/
-body {
+Body {
 	margin: 0 10%;
 }
-/*NAVIGATION: .LINKS/ .LOGO*/
+/* NAVIGATION: .TOP/ A/ .LOGO */
 nav {
+	width: 100%;
+	display:flex;			
+}
+
+.top {
+	width: 90%;
 	display: flex;
-    justify-content: space-between;
-}
-.links {    
-    width:80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav .links a {
-    color: black;
-    text-decoration: none;
-    padding: 1%;
-}
-
-nav .links a:hover {
-    color: #081fe9;
-}
-
-img.logo {
-    padding: 2.5%;
-    justify-content: space-around;
-    align-items: center;
-}
-/*ENDS NAVIGATION: .LINKS/ .LOGO */
-/* .HEADER: .INNOVATIONS/ BUTTON/ .IMAGE2*/
-#header {
-	display:flex;
-	flex-wrap: wrap;
-}
-.innovations {
-	text-align: center;
-	font-size: 65px;
-	width: 49%;
-	justify-content: space-around;
-}
-
-.image2 {
-	margin: 2.5% auto;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
-button {
-	margin-bottom: 10%;
-	width: 135px;
+a {
+	color: #8C8C8C;
+	margin: 0 3%;
+	text-decoration: none;
 }
 
-button:hover {
-    color: #081fe9;
-    background-color: rgb(211, 210, 210);
+a:hover {
+	color:#040DBF;
 }
-/*ENDS .HEADER: .INNOVATIONS/ BUTTON/ .IMAGE2*/
-/*.FIRST-SECTION: .FEATURES/ .ABOUT*/
+
+.logo {
+	margin: 0 auto;
+	font-size: 40px;
+	display: flex;
+}/* ENDS NAVIGATION: .TOP/ A/ .LOGO */
+/* HEADER: .INNOVATIONS/ BUTTON/ .IMAGES2 */
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.innovations {
+	text-align: center;
+	font-size: 60px;
+	width: 49%;
+	padding: 35px;
+	box-sizing: border-box;	
+}
+
+button:hover {	
+	background-color:#BFBFBF;
+}
+/*ENDS HEADER: INNOVATIONS/ BUTTON/ .IMAGES2*/
+/*.FIRST-SECTION: .FEATURES/ .ABOUT/ H2*/
+.first-section {
+	display: flex;
+	align-items: center;
+}
 h2 {
 	text-align: left;	
 }
-.first-section {
-	display:flex;
-	flex-wrap: wrap;
-}
+
 div.features {
-	margin: 2.5% .5%;
-	width: 49%;
-}    
+	margin: 3.5% 2.5%;
+	width: 45%;     
+}
 
 div.about {
-	margin: 2.5% .5%;
-	width: 49%;
-}
- /*ENDS .FIRST-SECTION: .FEATURES/ .ABOUT*/
- /*.MIDDLE-IMG SECTION*/
- .middle-img {
+	margin:3.5% 2.5%;
+	width: 45%;      
+ }
+/*ENDS .FIRST-SECTION: .FEATURES/ .ABOUT/ H2*/
+/*SECTION: .MIDDLE-IMG */
+section .middle-img {
 	width: 100%;
-	margin: 2.5% auto;
-	display: flex;
-	align-items: center;
 }
- /*ENDS .MIDDLE-IMG SECTION*/
- /*#BOTTON-SECTION: .SERVICES/ .PRODUCT/ .VISION */
+/*ENDS SECTION: .MIDDLE-IMG*/
+/*.BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION*/
 #bottom-section {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
 }
- div.services {
-	width: 30%;
-	margin: 2.5% 1%;
+
+div.services {
+	width: 28%;
+	margin: 3.5% 2.5%;;
  }
 
  div.product {
-	width: 30%;
-	margin: 2.5% .1%;
+	width: 28%;
+	margin: 3.5% 2.5%;
  }
 
 div.vision {
-	 width: 30%;
-	 margin: 2.5% 1%;
-}	
-/*ENDS #BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION */
+	width: 28%;
+	margin: 3.5% 2.5%;
+}
+/*ENDS .BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION */
 /*CONTACT SECTION*/
 .contact {
 	padding:2px;
@@ -180,121 +163,10 @@ div.vision {
 /*ENDS CONTACT SECTION*/
 /*FOOTER SECTION*/
 footer {
-	margin: 2.5% 0 5%;
-	text-align: center;
-}
-/*ENDS FOOTER SECTION AND ENDS INDEX.HTML*/
-
-/*BEGINS SERVICES.HTML */
-/*.SECTION-HEADER-IMG*/
-img.services-header-img {
-	width: 100%;
-	margin: 3.5% 0;
-}
-/*ENDS .SECTION-HEADER-IMG*/
-/*.SERVICES-INFO SECTION*/
-.services-info {
-	width: 100%;
-	margin-bottom: 2.5%;
-}
-/*ENDS .SERVICES-INFO SECTION*/
-/*.CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
-.container {
-	display: flex;
-	flex-direction: row;
-}
-
-.digital-design {
-	margin: 2.5% 1.5% 2.5% 0;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;
-}
-
-.ux-ui {
-	margin: 2.5% 0 2.5% 1.5%;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;	
-}
-/*ENDS .CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
-/*.CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
-.container2 {
-    display: flex;
-	flex-direction: row;
-}
-
-.digital-marketing {
-	margin: 2.5% 1.5% 2.5% 0;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;	
-}
-
-.web-development {
-	margin: 2.5% 0 2.5% 1.5%;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;	
-}
-/*ENDS .CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
-/*.CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/ .BUTTON2*/
-.container3 {
-	display: flex;
-	flex-direction: row;
-}
-
-.ios-development {
-	margin: 2.5% 1.5% 2.5% 0;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;
-}
-
-.android-development {
-	margin: 2.5% 0 2.5% 1.5%;
-	padding:2%;
-	border: 1px solid black;
-	background: #C6D5D2;
-}
-
-.button2 {
-	margin: 2% 0;
-	padding: 2%;
-	width: 35%;
-	border-radius: 5%;
-}
-
-.button2:hover {
-	background-color:#BFBFBF;	
-}
-/*ENDS .CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/.BUTTON2*/
-/*.CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG */
-.container4 {
-	display: flex;
-	flex-direction: row;
-}
-.facts-about-services {
-	align-content: center;
-	margin: 2.5%;
-}
-
-ul {
+	
 	text-align: left;
-	line-height: 1.5;
 }
-
-.services-info-img {
-	margin: 2.5%;
-	padding:2%;
-}
-/*ENDS .CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG*/
-/*FOOTER SECTION*/
-footer {
-	text-align: center;
-	margin: 5%;
-}
-/*ENDS FOOTER SECTION AND END OF SERVICES.HTML*/
+/*ENDS FOOTER SECTION AND END OF INDEX.HTML*/
 
 /*MEDIA QUERIES*/
 @media (max-width: 800px) {
@@ -306,7 +178,7 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .links {
+    .top {
         width: 110%;
         margin:3% 0;
     }        
@@ -330,10 +202,10 @@ footer {
     nav {
         align-items: center;
         }
-    .links {
+    .top {
         flex-direction: column;
     }
-    div.links a {
+    div.top a {
         color: rgb(148, 144, 144);
         text-align: center;
         font-size: 15px;

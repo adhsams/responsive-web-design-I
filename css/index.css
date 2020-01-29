@@ -217,7 +217,6 @@ footer {
         align-items: center;
         }
     .links {
-       
         flex-direction: column;
     }
     div.links a {

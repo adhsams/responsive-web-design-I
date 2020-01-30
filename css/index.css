@@ -109,6 +109,10 @@ a:hover {
 	box-sizing: border-box;	
 }
 
+button {
+    padding: .5% 8%;
+}
+
 button:hover {	
 	background-color:#BFBFBF;
 }

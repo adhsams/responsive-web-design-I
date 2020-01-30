@@ -208,6 +208,7 @@ footer {
 
     .logo-nav {
         width: 110%;
+        padding-top: 5%;
         padding-bottom: 5%;
         border-bottom:1px solid black;
         display: flex;        

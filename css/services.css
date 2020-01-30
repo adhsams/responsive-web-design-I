@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+Body {
+	margin: 0 10%;
+}
+/* NAVIGATION: .TOP/ A/ .LOGO */
+nav {
+	width: 100%;
+	display:flex;			
+}
+
+.top {
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+a {
+	color: #8C8C8C;
+	margin: 0 3%;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#040DBF;
+}
+
+.logo {
+	margin: 0 auto;
+	font-size: 40px;
+	display: flex;
+}/* ENDS NAVIGATION: .TOP/ A/ .LOGO */
+/* HEADER: .INNOVATIONS/ BUTTON/ .IMAGES2 */
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.innovations {
+	text-align: center;
+	font-size: 60px;
+	width: 49%;
+	padding: 35px;
+	box-sizing: border-box;	
+}
+
+button:hover {	
+	background-color:#BFBFBF;
+}
+/*ENDS HEADER: INNOVATIONS/ BUTTON/ .IMAGES2*/
+/*.FIRST-SECTION: .FEATURES/ .ABOUT/ H2*/
+.first-section {
+	display: flex;
+	align-items: center;
+}
+h2 {
+	text-align: left;	
+}
+
+div.features {
+	margin: 3.5% 2.5%;
+	width: 45%;     
+}
+
+div.about {
+	margin:3.5% 2.5%;
+	width: 45%;      
+ }
+/*ENDS .FIRST-SECTION: .FEATURES/ .ABOUT/ H2*/
+/*SECTION: .MIDDLE-IMG */
+section .middle-img {
+	width: 100%;
+}
+/*ENDS SECTION: .MIDDLE-IMG*/
+/*.BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION*/
+#bottom-section {
+	display: flex;
+}
+
+div.services {
+	width: 28%;
+	margin: 3.5% 2.5%;;
+ }
+
+ div.product {
+	width: 28%;
+	margin: 3.5% 2.5%;
+ }
+
+div.vision {
+	width: 28%;
+	margin: 3.5% 2.5%;
+}
+/*ENDS .BOTTOM-SECTION: .SERVICES/ .PRODUCT/ .VISION */
+/*CONTACT SECTION*/
+.contact {
+	padding:2px;
+	margin: 2px;
+}
+/*ENDS CONTACT SECTION*/
+/*FOOTER SECTION*/
+footer {
+	
+	text-align: left;
+}
+/*ENDS FOOTER SECTION AND END OF INDEX.HTML*/
+
+/*BEGINS SERVICES.HTML */
+/*.SECTION-HEADER-IMG*/
+img.services-header-img {
+	width: 100%;
+	margin: 3.5% 0;
+}
+/*ENDS .SECTION-HEADER-IMG*/
+/*.SERVICES-INFO SECTION*/
+.services-info {
+	width: 100%;
+	margin-bottom: 2.5%;
+}
+/*ENDS .SERVICES-INFO SECTION*/
+/*.CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.digital-design {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.ux-ui {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+/*ENDS .CONTAINER SECTION: .DIGITAL-DESIGN/ .UX-UI*/
+/*.CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
+.container2 {
+    display: flex;
+	flex-direction: row;
+}
+
+.digital-marketing {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+
+.web-development {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;	
+}
+/*ENDS .CONTAINER2: DIGITAL-MARKETING/ .WEB-DEVELOPMENT*/
+/*.CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/ .BUTTON2*/
+.container3 {
+	display: flex;
+	flex-direction: row;
+}
+
+.ios-development {
+	margin: 2.5% 1.5% 2.5% 0;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.android-development {
+	margin: 2.5% 0 2.5% 1.5%;
+	padding:2%;
+	border: 1px solid black;
+	background: #C6D5D2;
+}
+
+.button2 {
+	margin: 2% 0;
+	padding: 2%;
+	width: 35%;
+	border-radius: 5%;
+}
+
+.button2:hover {
+	background-color:#BFBFBF;	
+}
+/*ENDS .CONTAINER3: .IOS-DEVELOPMENT/ .ANDROID-DEVELOPMENT/.BUTTON2*/
+/*.CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG */
+.container4 {
+	display: flex;
+	flex-direction: row;
+}
+.facts-about-services {
+	align-content: center;
+	margin: 2.5%;
+}
+
+ul {
+	text-align: left;
+	line-height: 1.5;
+}
+
+.services-info-img {
+	margin: 2.5%;
+	padding:2%;
+}
+/*ENDS .CONTAINER4: .FACTS-ABOUT-SERVICES/ UL/ .SERVICES-INFO-IMG*/
+/*FOOTER SECTION*/
+footer {
+	text-align: center;
+	margin: 5%;
+}
+/*ENDS FOOTER SECTION AND END OF SERVICES.HTML*/
+
+/*BEGINS MEDIA QUERY FOR (800px)*/
+@media (max-width: 800px) {
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}/*ENDS NAV*/
+
+	.logo {
+		justify-content: center;
+		align-items: center;
+		margin: 3.5% 0;
+	}/*ENDS .LOGO*/
+
+	.top {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.services-info-img {
+		display: none;
+	}/*ENDS .SERVICES-INFO-IMG*/
+}/*ENDS MEDIA QUERY*/
+/*ENDS MEDIA QUERY FOR (800px) */
+
+/*BEGINS MEDIA QUERY (500px)*/
+@media (max-width: 500px) {
+	nav { 
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin: 2% auto;
+	}/*ENDS NAV*/
+
+	.logo {
+		margin: 3% auto;	 	
+	}/*ENDS .LOGO*/
+	
+	.top {
+		justify-content: space-evenly;
+	}
+
+	img.services-header-img {
+		width: 100%;	 	
+    }/*ENDS IMG.SERVICES-HEADER-IMG*/
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}/*ENDS .CONTAINER */	
+
+	.digital-design {
+		margin: 4% 0;
+	}/*ENDS .DIGITAL-DESIGN*/
+
+	.ux-ui {
+		margin: 4% 0;
+	}/*ENDS .UX-UI*/	
+
+	.container2 {
+		display: flex;
+		flex-direction: column;
+	}/*ENDS .CONTAINER2*/
+
+	.digital-marketing {
+		margin: 4% 0;
+	}/*ENDS .DIGITAL-MARKETING*/
+
+	.web-development {
+		margin: 4% 0;
+	}/*ENDS .WEB-DEVELOPMENT*/	
+
+	.container3 {
+		display: flex;
+		flex-direction: column;
+	}/*ENDS .CONTAINER3*/	
+
+	.ios-development {
+		margin: 4% 0;
+	}/*ENDS .IOS-DEVELOPMENT*/
+
+	.android-development {
+		margin: 4% 0;
+	}/*ENDS .ANDROID-DEVELOPMENT*/	
+
+	.container4 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}/*ENDS .CONTAINER4*/
+	
+	.list {
+		display: flex;
+		justify-content: center;
+	}
+	.services-info-img {
+		margin: 0 auto;
+	}/*ENDS .SERVICES-INFO-IMG*/
+  
+}/*ENDS MEDIA QUERY*/
+

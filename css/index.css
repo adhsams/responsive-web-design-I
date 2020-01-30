@@ -67,11 +67,13 @@ Body {
 /* NAVIGATION: .TOP/ A/ .LOGO */
 nav {
 	width: 100%;
-	display:flex;			
+    display:flex;
+    align-items: center;			
 }
 
 .top {
-	width: 90%;
+    width: 90%;
+    margin: 3%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -95,7 +97,7 @@ a:hover {
 /* HEADER: .INNOVATIONS/ BUTTON/ .IMAGES2 */
 header {
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -163,15 +165,15 @@ div.vision {
 /*ENDS CONTACT SECTION*/
 /*FOOTER SECTION*/
 footer {
-	
-	text-align: left;
+	margin-bottom: 5%;
+	text-align: center;
 }
 /*ENDS FOOTER SECTION AND END OF INDEX.HTML*/
 
 /*MEDIA QUERIES*/
 @media (max-width: 800px) {
     body {
-        margin: 3% 0;
+        margin: 3%;
     }
     nav {
         display: flex;
@@ -199,12 +201,22 @@ footer {
     body {
         margin: 0 2.5%;
     }
+       
     nav {
         align-items: center;
-        }
+    }
+
+    .logo-nav {
+        width: 100%;
+        padding-bottom: 3%;
+        border-bottom:1px solid black;
+        display: flex;        
+    }
+    
     .top {
         flex-direction: column;
     }
+    
     div.top a {
         color: rgb(148, 144, 144);
         text-align: center;
@@ -214,40 +226,50 @@ footer {
         width: 100%;
         border-bottom:1px solid black;
     }    
-   div.img { 
+    
+    div.img { 
         order: -1;
         width: 30%;
         align-content: center;
     }
+    
     .innovations {
         width: auto;
         align-content: center;
     }
+    
     .image2 {
         display: none;
     }
+    
     .first-section {
         flex-direction: column;
     }
+    
     div.features {
         margin: 7% 0%;
         width: auto;
     }  
+    
     div.about {
         margin: 7% 0;
         width: auto;
     }
+    
     #bottom-section {
         flex-direction: column;
     }
+    
     div.services {
         margin: 7% 0;
         width: auto;
     }
+    
     div.product {
         margin: 7% 0;
         width: auto;
     }
+    
     div.vision {
         margin: 7% 0;
         width: auto;
